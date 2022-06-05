@@ -1,15 +1,16 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.htmlWhitespaceSensitivity": "ignore",
-  "prettier.printWidth": 200,
-  "prettier.proseWrap": "never",
-  "prettier.tabWidth": 4,
-  "prettier.useTabs": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "angular.enable-strict-mode-prompt": false
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.htmlWhitespaceSensitivity": "ignore",
+	"prettier.printWidth": 200,
+	"prettier.proseWrap": "never",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"angular.enable-strict-mode-prompt": false,
+	"prettier.useEditorConfig": false
 }
