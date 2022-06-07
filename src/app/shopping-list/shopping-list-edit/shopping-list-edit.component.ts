@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 
 @Component({
-  selector: 'app-shopping-list-edit',
-  templateUrl: './shopping-list-edit.component.html',
-  styleUrls: ['./shopping-list-edit.component.css']
+	selector: "app-shopping-list-edit",
+	templateUrl: "./shopping-list-edit.component.html",
+	styleUrls: ["./shopping-list-edit.component.css"],
 })
-export class ShoppingListEditComponent implements OnInit {
+export class ShoppingListEditComponent implements OnInit, AfterViewInit {
+	@ViewChild("amountRef") amountRef: ElementRef;
+	constructor() {}
 
-  constructor() { }
+	ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+	ngAfterViewInit(): void {
+		console.log("----- amount -----", this.amountRef);
+	}
 }
