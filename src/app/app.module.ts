@@ -1,5 +1,7 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.component";
@@ -12,7 +14,7 @@ import { ShoppingListService } from "./shopping-list/shopping-list.service";
 
 @NgModule({
 	declarations: [AppComponent, HeaderComponent, RecipesComponent, RecipeDetailComponent, ShoppingListComponent, ShoppingListEditComponent, RecipeListComponent, RecipeItemComponent],
-	imports: [BrowserModule],
+	imports: [BrowserModule, CommonModule, AppRoutingModule],
 	providers: [ShoppingListService],
 	bootstrap: [AppComponent],
 })
