@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Ingredient } from "src/app/shared/ingredient.model";
 import { ShoppingListService } from "../shopping-list.service";
 
@@ -16,7 +16,6 @@ export class ShoppingListEditComponent implements OnInit {
 	ngOnInit(): void {}
 
 	addIngredient() {
-		console.log("----- amount -----", this.amountRef.nativeElement.value);
 		const name = this.nameRef.nativeElement.value;
 		const amount = this.amountRef.nativeElement.value;
 		const newIngredient = new Ingredient(name, amount);
